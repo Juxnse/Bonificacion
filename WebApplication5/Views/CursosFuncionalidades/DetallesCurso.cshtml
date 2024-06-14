@@ -1,0 +1,25 @@
+﻿@model WebApplication5.Curso
+
+@{
+    ViewBag.Title = "Detalles del Curso";
+}
+
+<h2>Detalles del Curso</h2>
+
+<dl class="dl-horizontal">
+    <dt>Curso Id</dt>
+    <dd>@Model.CursoId</dd>
+
+    <dt>Código del Curso</dt>
+    <dd>@Model.CodigoCurso</dd>
+
+    <dt>Nombre del Curso</dt>
+    <dd>@Model.NombreCurso</dd>
+
+    <dt>Valor del Curso</dt>
+    <dd>@Model.ValorCurso</dd>
+</dl>
+
+<p>
+    @Html.ActionLink("Volver a Buscar", "BuscarCurso", "CursosFuncionalidades", null, new { @class = "btn btn-primary" })
+</p>
